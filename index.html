@@ -1,35 +1,60 @@
 <html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="index.css">
-</head>
-
-<body>
+  <body>
     <header>
-        <section class="header-text">
-            <h1>Drigo's Tacos!</h1>
-            <h3>The best Mexican food in town!</h3>
-        </section>
+      <section class="header-text">
+        <h1>Drigo's Tacos!</h1>
+        <h3>The best Mexican food in town!</h3>
+      </section>
     </header>
 
-    <main >
-        <section id='menu-list'>
-            <section class="card">
-            </section>
-        </section>
-        <h2 class="order-title">Your order</h2>
-        <div id='order-review'>
+    <main>
+      <section id="menu-list">
+        <section class="card"></section>
+      </section>
+      <div id="order-review">
+        <div id="order-text">
         </div>
-        <section id='order-total' class="order-section">
-            <section class="order-total">
-                <h2>Total Price:</h2>
-                <p>TOTAL HERE</p>
-            </section>
-            <button id='complete-order' class="completeBtn">Complete order</button>
-            </section>
+      </div>
+      <section id="order-total" class="order-section"></section>
+      <section class="modal" id="modal">
+        <h2>Enter Card Details</h2>
+        <form id="payment-form" class="payment">
+          <input
+            required
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your full name"
+          />
+          <input
+            required
+            type="tel"
+            inputmode="numeric"
+            pattern="[0-9\s]{13,19}"
+            maxlength="16"
+            id="CCNumber"
+            name="CCNumber"
+            placeholder="Enter your 16 digit credit card"
+          />
+          <input
+            required
+            type="number"
+            id="CVV"
+            name="CVV"
+            placeholder="Enter your CVV"
+          />
+          <button type="submit" class="paybtn">Pay</button>
+        </form>
+      </section>
     </main>
     <script type="module" src="./index.js"></script>
-</body>
-
+  </body>
 </html>

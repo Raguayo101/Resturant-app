@@ -1,117 +1,186 @@
 body {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 img {
-    width: 70px;
-    height: 89px;
+  width: 70px;
+  height: 89px;
 }
 
 .card {
-    display: flex;
-    justify-content: space-evenly;
-    border: 1px solid #D2D2D2;
-
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid #d2d2d2;
 }
 
 header {
-    background-image: url('./img/background-img.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    max-width: auto;
-    height: 100vh;
-    margin: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-image: url("./img/background-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: auto;
+  height: 40vh;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-text{
+    font-size: 50px;
 }
 
 .add-btn {
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    border: 1.5px solid #DEDEDE;
-    font-weight: 100px;
-    font-weight: 200;
-    font-size: 32px;
-    margin-top: 50px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  border: 1.5px solid #dedede;
+  font-weight: 100px;
+  font-weight: 200;
+  font-size: 32px;
+  margin-top: 50px;
 }
 
 .ingredient-list {
-    color: #8B8B8B;
+  color: #8b8b8b;
 }
 
 .item {
-    margin-top: 40px;
-    width: 300px;
+  margin-top: 40px;
+  width: 300px;
 }
 
 .item-list {
-    margin: 0;
+  margin: 0;
 }
 
 .item-img {
-    margin-top: 30px;
-    width: 70px;
-    height: 89px;
-    font-size: 100px;
+  margin-top: 30px;
+  width: 70px;
+  height: 89px;
+  font-size: 100px;
 }
 
 /* order review */
 .order-title {
-    text-align: center;
+  text-align: center;
 }
 
 .order-review {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .item-review {
-    display: flex;
+  display: flex;
 }
 
 .remove-btn {
-    border: none;
-    outline: none;
-    color: #BBBBBB;
-    background-color: none;
-    background-color: Transparent;
+  border: none;
+  outline: none;
+  color: #bbbbbb;
+  background-color: none;
+  background-color: Transparent;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 /* order total section*/
 .order-total {
-    border-top: 2px solid #393333;
-    width: 650px;
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
+  border-top: 2px solid #393333;
+  width: 650px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
 .order-section {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 53px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 53px;
 }
 
-.completeBtn {
-    background: #16DB99;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-    border-radius: 3px;
-    text-align: center;
-    width: 508px;
-    height: 60px;
-    margin: 0 auto;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
+.completeBtn,
+.paybtn {
+  background: #16db99;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  text-align: center;
+  width: 476px;
+  height: 60px;
+  margin: 0 auto;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 524px;
+  height: 490px;
+  filter: drop-shadow(5.18654px 5.18654px 255.437px rgba(0, 0, 0, 0.5));
+  background: #ffffff;
+  border-radius: 3.88991px;
+  text-align: center;
+}
+
+.modal h2 {
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+input {
+  width: 475.91px;
+  height: 71.3px;
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 9px;
+}
+
+.paybtn {
+  margin-top: 20px;
+}
+
+.order-text{
+    display: none;
+}
+/* thank you message */
+
+.thanks {
+  background: #ecfdf5;
+  border-radius: 3px;
+  width: 504px;
+  height: 120px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
 }

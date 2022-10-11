@@ -1,16 +1,16 @@
 export const menuArray = [
     {
-        name: "Pizza",
-        ingredients: ["pepperoni", "mushrom", "mozarella"],
+        name: "taco",
+        ingredients: ["tortilla, beef, salsa"],
         id: '0',
         price: 14,
-        emoji: "🍕"
+        emoji: "🌮"
     },
     {
-        name: "Hamburger",
-        ingredients: ["beef", "cheese", "lettuce"],
+        name: "Burrito",
+        ingredients: ["beef, cheese, tortilla, beans "],
         price: 12,
-        emoji: "🍔",
+        emoji: "🌯",
         id: '1'
     },
         {

@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+img {
+    width: 70px;
+    height: 89px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #D2D2D2;
+
+}
+
+header {
+    background-image: url('./img/background-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: auto;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-btn {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid #DEDEDE;
+    font-weight: 100px;
+    font-weight: 200;
+    font-size: 32px;
+    margin-top: 50px;
+}
+
+.ingredient-list {
+    color: #8B8B8B;
+}
+
+.item {
+    margin-top: 40px;
+    width: 300px;
+}
+
+.item-list {
+    margin: 0;
+}
+
+.item-img {
+    margin-top: 30px;
+    width: 70px;
+    height: 89px;
+    font-size: 100px;
+}
+
+/* order review */
+.order-title {
+    text-align: center;
+}
+
+.order-review {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item-review {
+    display: flex;
+}
+
+.remove-btn {
+    border: none;
+    outline: none;
+    color: #BBBBBB;
+    background-color: none;
+    background-color: Transparent;
+}
+
+.hidden {
+    display: none;
+}
+
+/* order total section*/
+.order-total {
+    border-top: 2px solid #393333;
+    width: 650px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.order-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 53px;
+}
+
+.completeBtn {
+    background: #16DB99;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    text-align: center;
+    width: 508px;
+    height: 60px;
+    margin: 0 auto;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
